@@ -6,9 +6,9 @@ import os
 app = Flask(__name__)
 
 
-JIRA_URL = os.environ.get('ENV__TYPE') 
-JIRA_API_TOKEN = os.environ.get('JIRA_API_TOKEN') 
-JIRA_PROJECT_KEY = os.environ.get('JIRA_PROJECT_KEY')
+JIRA_URL = os.environ.get('JIRA__URL')
+JIRA_API_TOKEN = os.environ.get('JIRA__API__TOKEN')
+JIRA_PROJECT_KEY = os.environ.get('JIRA__PROJECT__KEY')
 JIRA_ISSUE_TYPE = 'Task'  # or any other issue type
 
 # Set header parameters
